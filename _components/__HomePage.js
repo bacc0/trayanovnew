@@ -8,7 +8,7 @@ import { useState, useEffect, Fragment } from 'react'
 export default function HomePage({ 
      currentBrowser, theme, setTheme, Y_position ,scrollDirection }) {
 
-     const color_1 = '#FFFFFF'
+     const color_1 = 'red'
      const color_2 = '#FAFAFA' // F2F2F2
      const color_3 = '#757575'
      const color_4 = '#383838' //#040F1B
