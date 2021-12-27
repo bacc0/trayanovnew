@@ -1,0 +1,335 @@
+$distance-middle-half: 24px;
+$distance-middle-full: $distance-middle-half * 2;
+
+$margin-footer-mobile : 70px;
+$margin-footer-desktop : 60px;
+
+$element-width: 240px;
+
+$element-width-mobile: 80%;
+
+
+$title-width: ($element-width + $distance-middle-half) * 2;
+
+$accent-height: 120px;
+
+$nav-height: 200px;
+
+
+body {
+
+     svg {
+          // https://css-tricks.com/how-to-do-knockout-text/
+     }
+
+     margin: 0;
+     padding: 0;
+     font-size: 14px;
+     line-height: 22px;
+     font-family: 'Poppins',
+     sans-serif;
+     letter-spacing: 0.7px;
+     word-spacing: 3px;
+     font-weight: 200;
+     margin-top: 0px;
+
+     hr {
+          width: 100%;
+          margin-left: 0;
+          margin-right: auto;
+          height: 1px;
+          border: 0 none;
+          margin-top: 20px
+     }
+
+     h2 {
+          margin-top: -2px;
+          font-size: 16px;
+          font-weight: 600;
+
+
+
+     }
+
+     h3 {
+          margin-top: -2px;
+          font-size: 16px;
+          font-weight: 600;
+     }
+
+     h1 {
+          font-size: 30px;
+          line-height: 24px;
+          letter-spacing: 6px;
+          font-weight: 300;
+          margin-top: -8px;
+     }
+
+     .font-weight-300 {
+          font-weight: 300;
+
+     }
+
+     .accent-title {
+          font-size: 22px;
+          line-height: 40px;
+          letter-spacing: 4px;
+
+     }
+
+     .vertical-center-container {
+          position: relative;
+
+          .vertical-center {
+               margin: 0;
+               position: absolute;
+               top: 50%;
+               -ms-transform: translateY(-50%);
+               transform: translateY(-50%);
+          }
+     }
+
+     .vertical-center-container-right {
+          position: relative;
+
+          .vertical-center-right {
+               margin: 0 0 0 $distance-middle-half;
+               position: absolute;
+               top: 50%;
+               -ms-transform: translateY(-50%);
+               transform: translateY(-50%);
+          }
+     }
+
+     .pages-wrapper {
+
+          .page {
+
+               transition: background-color 350ms ease;
+
+               .page-nav {
+                    width: 100%;
+                    height: $nav-height;
+                    // margin-bottom: $distance-middle-full;
+
+                    .title-container {
+                         height: 100%;
+                         margin: 0 auto;
+                         display: flex;
+                         align-items: flex-end;
+                         justify-content: center;
+                    }
+               }
+
+               @media only screen and (max-width: 600px) {
+                    .page-body {
+                         width: 100%;
+                         font-size: 17px;
+                         line-height: 30px;
+                         letter-spacing: 0.78px;
+                         word-spacing: 3px;
+                         font-weight: 300;
+
+                         .font-weight-300 {
+                              font-weight: 400
+                         }
+
+                         .page-body-left {
+                              width: 100%;
+                              min-width: 300px;
+
+
+                              .container-content-left {
+                                   width: 100%;
+
+                                   margin-right: 0;
+                                   display: flex;
+                                   justify-content: center;
+                                   margin-top: 0px;
+
+                                   .content-left {
+                                        width: $element-width-mobile;
+
+                                        padding-bottom: 39px;
+
+                                   }
+                              }
+                         }
+
+                         .page-body-right {
+                              width: 100%;
+                              min-width: 300px;
+
+                              // margin-top: 10px;
+                              // background-color: #D2D844;
+                              .container-right-accent {
+                                   // background-color: #D2D844;
+
+                                   height: $accent-height;
+                                   margin-left: $distance-middle-half;
+                                   margin-bottom: $distance-middle-full;
+
+
+                              }
+
+                              .container-content-right {
+                                   width: 100%;
+                                   min-height: 100px;
+                                   margin-right: 0;
+                                   display: flex;
+                                   justify-content: center;
+                                   margin-top: 0px;
+
+                                   .content-right {
+                                        width: $element-width-mobile;
+                                        min-height: 100px;
+                                        padding-bottom: 39px;
+                                   }
+                              }
+                         }
+                    }
+               }
+
+               @media only screen and (min-width: 601px) {
+                    .page-body {
+                         width: 100%;
+                         display: flex;
+
+
+
+                         .page-body-left {
+                              width: 50%;
+                              min-width: 300px;
+
+
+
+                              .container-content-left {
+
+                                   margin-right: $distance-middle-half;
+                                   display: flex;
+                                   justify-content: flex-end;
+                                   margin-top: 11px;
+
+                                   .content-left {
+                                        width: $element-width;
+                                       
+                                   }
+                              }
+                         }
+
+                         .page-body-right {
+                              width: 50%;
+                              min-width: 300px;
+
+                              .container-right-accent {
+                                   // background-color: #D2D844;
+                                   height: $accent-height;
+                                   margin-left: $distance-middle-half;
+                                   margin-bottom: $distance-middle-full;
+                              }
+
+                              .container-content-right {
+
+                                   min-height: 100px;
+                                   margin-left: $distance-middle-half;
+                                   margin-bottom: $distance-middle-full;
+                                   margin-top: 10px;
+
+                                   .content-right {
+                                        width: $element-width;
+                                        min-height: 100px
+                                   }
+                              }
+                         }
+                    }
+               }
+          }
+     }
+
+
+
+
+
+     .container-footer {
+          border: 1px solid #444444;
+
+          .footer {
+               // border: 1px solid #444444;
+               width: $element-width + $element-width + $distance-middle-full;
+               margin: $margin-footer-desktop auto;
+               display: flex;
+
+               .footer-left {
+                    // border: 1px solid #0044c1;
+                    width: $element-width;
+                    margin-right: $distance-middle-full;
+               }
+
+               .footer-right {
+                    // border: 1px solid #c10000;
+                    width: $element-width;
+               }
+          }
+     }
+
+     .footer-items-container {
+          display: flex;
+
+          .footer-icon {
+               position: relative;
+               top: -1px;
+          }
+
+          .footer-icon-text {
+               padding-left: 16px;
+          }
+     }
+
+     @media only screen and (max-width: 600px) {
+
+          .container-footer {
+
+               .footer {
+
+                    width: 80%;
+                    margin: $margin-footer-mobile auto;
+                    display: block;
+
+                    .footer-left {
+                         width: 100%;
+                    }
+
+                    .footer-right {
+                         width: 100%;
+                    }
+               }
+          }
+
+          .footer-items-container {
+               padding: 00;
+
+               .footer-icon {
+                    position: relative;
+                    top: 2px;
+               }
+
+               .footer-icon-text {
+                    font-size: 15px;
+                    padding-left: 20px;
+                    font-weight: 100;
+               }
+          }
+     }
+
+
+
+
+
+
+
+
+
+
+
+
+}

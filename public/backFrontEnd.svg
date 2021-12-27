@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0" y="0" width="612" height="696" viewBox="0, 0, 612, 696">
+  <defs>
+    <linearGradient id="Gradient_1" gradientUnits="userSpaceOnUse" x1="89.626" y1="102.22" x2="522.374" y2="595.78">
+      <stop offset="0" stop-color="#915CD7" stop-opacity="0.917"/>
+      <stop offset="0.044" stop-color="#EB8BE8" stop-opacity="0.739"/>
+      <stop offset="0.073" stop-color="#FFFFFF"/>
+      <stop offset="0.099" stop-color="#C28EE5"/>
+      <stop offset="0.141" stop-color="#7659E0" stop-opacity="0.888"/>
+      <stop offset="0.214" stop-color="#FBFAFC"/>
+      <stop offset="0.247" stop-color="#B38BEB" stop-opacity="0.894"/>
+      <stop offset="0.46" stop-color="#9878DE"/>
+      <stop offset="0.492" stop-color="#FFFFFF"/>
+      <stop offset="0.52" stop-color="#EB8BE8" stop-opacity="0.85"/>
+      <stop offset="0.734" stop-color="#7F3ED8"/>
+      <stop offset="1" stop-color="#D9A6E5" stop-opacity="0.444"/>
+    </linearGradient>
+  </defs>
+  <g id="Layer_2" opacity="0">
+    <path d="M0,0 L612,0 L612,698 L0,698 L0,0 z" fill="#FFFFFF"/>
+  </g>
+  <g id="Layer_2" opacity="0.798">
+    <path d="M0,0 L612,0 L612,698 L0,698 L0,0 z" fill="url(#Gradient_1)"/>
+  </g>
+</svg>
